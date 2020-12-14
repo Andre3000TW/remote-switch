@@ -6,7 +6,7 @@ This project allows users (clients) to control their switches remotely through c
 
 ### Wiring diagram
 <img src="./media/wiring-diagram.png" width="50%" height="50%"> \
-We use left LED to represent the lamp that we used in the project and take right LED as Wi-Fi signal indicator. \
+We use **left LED to represent the lamp** that we used in the project and take **right LED as Wi-Fi signal indicator**. \
 *(Note: The parts in the wiring diagram are not exactly the same as the parts that we used.)*
 
 # Test Environment
