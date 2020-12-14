@@ -11,9 +11,9 @@ We use **left LED to represent the lamp** that we used in the project and take *
 
 # Test Environment
 + AWS EC2 - Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
-+ NodeMCU (ESP8266)
-+ Relay module (jqc-3ff-s-z)
 + Node.js 13.5.0 (with npm 6.13.4 installed)
++ NodeMCU v2 (with ESP8266)
++ Relay module: JQC-3FF-S-Z
 
 # [Package Requirements](./requirements.bat)
 + express==4.17.1 (for Node.js)
