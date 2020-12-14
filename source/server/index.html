@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            .container {
+                left: 0;
+                line-height: 200px;
+                margin-top: -150px;
+                position: absolute;
+                text-align: center;
+                top: 40%;
+                width: 100%;
+                font-size: 50px;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .inside-container {
+                margin-left: 100px;
+                margin-right: 100px;
+                border: 2px solid black;
+                background-color: darkgray;
+            }
+            input[type=text], input[type=password] {
+                width: 300px;
+                height: 50px;
+                font-size: 50px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            input[type=submit] {
+                border: 2px solid black;
+                width: 250px;
+                height: 60px;
+                font-size: 50px;
+                font-family: 'Times New Roman', Times, serif;
+                background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form method="POST" action="/control">
+                <div class="inside-container">
+                    Username: <input type="text" id="un" name="username"><br>
+                    Password: <input type="password" id="pw" name="password"><br>
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        <script>
+            if (window.location.search == '?ls=failed') {
+                let err_msg = document.createElement('p');
+                err_msg.style.color = 'red';
+                err_msg.style.fontSize = '40px';
+                err_msg.style.marginTop = '-300px';
+                err_msg.textContent = 'Wrong username/password';
+                
+                let body = document.getElementsByTagName('div')[0]
+                body.appendChild(err_msg);
+            }
+        </script>
+    </body>
+</html>

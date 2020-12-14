@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switch Control Page</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .item {
+            display: block;
+            border: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button class="item" onclick="onClick()">
+        <img id ="button-image" src="off.png" width="980" height="1430">
+    </button>
+    <script>
+        onClick = (cmd) => {
+            let request = new XMLHttpRequest();
+            request.open('HEAD', window.location.href);
+            request.send();
+            
+            request.onload = function(data) {
+                if (request.status == 200) {
+                    image = document.getElementById('button-image');
+                    if (image.src == window.location.origin + '/off.png') image.src = 'on.png';
+                    else image.src = 'off.png';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
