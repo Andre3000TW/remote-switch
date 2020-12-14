@@ -2,10 +2,10 @@
 This project allows users (clients) to control their switches remotely through cloud (AWS EC2).
 
 ### System architecture
-<img src="./media/system-architecture.png" width="75%" height="75%">
+<img src="./media/system-architecture.png" width="80%" height="80%">
 
 ### Wiring diagram
-<img src="./media/wiring-diagram.png" width="50%" height="50%"> \
+<img src="./media/wiring-diagram.png" width="80%" height="80%"> \
 We use **left LED to represent the lamp** that we used in the project and take **right LED as a Wi-Fi signal indicator**. \
 *(Note: The parts in the wiring diagram are not exactly the same as the parts that we used in the project.)*
 
